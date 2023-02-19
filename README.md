@@ -1,5 +1,11 @@
 # Frontend Pleno
 
-na raiz do diretório, execute o seguinte comando: npm run dev
+precisa de Node.JS instalado
 
-no navegador: https://localhost:3000
+na raiz do diretório, execute os seguinte comandos: 
+
+npm install
+
+npm run dev
+
+e abra no navegador: https://localhost:3000
