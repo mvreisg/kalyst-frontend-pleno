@@ -35,8 +35,8 @@ const defaultContext: Context = {
 
 const AppContext = createContext<Context>(defaultContext);
 
-export function AppWrapper({children}){
-    const context: Context =  defaultContext;
+export function AppWrapper({ children }) {
+    const context: Context = defaultContext;
     return (
         <AppContext.Provider value={context}>
             {children}
@@ -44,6 +44,6 @@ export function AppWrapper({children}){
     );
 };
 
-export function useAppContext(){
+export function useAppContext() {
     return useContext(AppContext);
 }

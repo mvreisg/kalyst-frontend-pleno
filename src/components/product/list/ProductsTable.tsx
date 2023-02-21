@@ -4,25 +4,25 @@ import { useState } from 'react'
 import AddCard from './AddCard';
 import { useRouter, useSearchParams } from 'next/navigation';
 
-export default function ProductsTable(){    
+export default function ProductsTable() {
     const params = useSearchParams();
-    const action = params.get('action');    
+    const action = params.get('action');
     const [state, setState] = useState([]);
     const [fetched, setFetched] = useState(false);
     const context = useAppContext();
-    if ((action === "refresh" && !fetched) || !fetched){
-        if (!context.clientRequestedProductList){
+    if ((action === "refresh" && !fetched) || !fetched) {
+        if (!context.clientRequestedProductList) {
             context.clientRequestedProductList = true;
             fetch('http://localhost:3000/api/product/list')
-            .then((res) => res.json()
-            .then((json) => { 
-                setState(json);
-                setFetched(true);
-            }));
+                .then((res) => res.json()
+                    .then((json) => {
+                        setState(json);
+                        setFetched(true);
+                    }));
         }
-        return (<AddCard/>);
+        return (<AddCard />);
     }
-    else{        
+    else {
         context.clientRequestedProductList = false;
         let elements = [];
         elements.push(
@@ -45,7 +45,7 @@ export default function ProductsTable(){
                     <div key={`${index}-${product.paymentType}`}>{product.paymentType}</div>
                     <div key={`${index}-${product.price}`}>R$ {product.price}</div>
                     <div key={`${index}-${product.checkoutURL}`}>{product.checkoutURL}</div>
-                    <div key={`${index}-${product.action}`} className="text-sky-400">{product.action}</div>            
+                    <div key={`${index}-${product.action}`} className="text-sky-400">{product.action}</div>
                 </div>)
             );
         });
@@ -54,5 +54,5 @@ export default function ProductsTable(){
                 {elements}
             </div>
         );
-    }        
+    }
 }

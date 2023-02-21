@@ -7,6 +7,6 @@ export default function handler(
 ) {
   products.push(JSON.parse(req.body));
   res.status(200).json(
-    {status: "ok"}
+    { status: "ok" }
   );
 }

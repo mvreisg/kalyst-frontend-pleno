@@ -2,10 +2,10 @@ import './../../globals.css';
 import Panel from "@/components/product/list/Panel";
 import { AppWrapper } from '@/context/context';
 
-export default function ProductList(){
+export default function ProductList() {
     return (
         <AppWrapper>
-            <Panel/> 
+            <Panel />
         </AppWrapper>
     );
 }
