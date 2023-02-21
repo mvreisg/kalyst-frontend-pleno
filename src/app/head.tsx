@@ -1,9 +1,8 @@
 export default function Head() {
   return (
     <>
-      <title>Frontend Pleno</title>
-      <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <link rel="icon" href="/favicon.ico" />
+      <title>Index</title>
+      <meta content="width=device-width, initial-scale=1" name="viewport" />      
     </>
   )
 }

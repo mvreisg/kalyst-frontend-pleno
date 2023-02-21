@@ -1,2 +1,12 @@
 [
+    {
+        "sku": "a", 
+        "name": "b",
+        "description": "c",
+        "paymentType": "d",
+        "price": 3.33,
+        "imageURL": "f",
+        "checkoutURL": "g",
+        "action": "h"
+    }
 ]
