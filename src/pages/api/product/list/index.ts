@@ -1,11 +1,15 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import products from './../../../../storage/products.json';
+import fs from 'fs/promises';
 
-export default function handler(
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  res.status(200).json(
-    products
-  );
+  const json = await fs.readFile('./src/storage/products.json');
+  let str = "";
+  json.toJSON().data.forEach((v) => {
+    str += String.fromCodePoint(v);
+  });
+  //console.log(str);
+  return res.status(200).json(JSON.parse(str));
 }

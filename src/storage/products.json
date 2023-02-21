@@ -1,12 +1,1 @@
-[
-    {
-        "sku": "a",
-        "name": "b",
-        "description": "c",
-        "paymentType": "d",
-        "price": 3.33,
-        "imageURL": "f",
-        "checkoutURL": "g",
-        "action": "h"
-    }
-]
+{"data":[{"sku":"462327837.41793495","name":"frefer","description":"gregerge","paymentType":"Uma Vez","price":34543534,"imageURL":"blob:http://localhost:3000/4403575d-dda1-4bf1-913c-95378bee98e4","checkoutURL":"https://www.google.com","action":"Editar"},{"sku":"653028115.7818764","name":"56","description":"56","paymentType":"Uma Vez","price":56,"imageURL":"blob:http://localhost:3000/c13d1d3c-057d-4782-9afa-56992e28f0c4","checkoutURL":"https://www.google.com","action":"Editar"},{"sku":"534033181.6439356","name":"fewfew","description":"wfewefw","paymentType":"","price":423432423,"imageURL":"blob:http://localhost:3000/74a6439b-ca04-43a1-a9ed-7db5cccde296","checkoutURL":"https://www.google.com","action":"Editar"},{"sku":"31684658.187798753","name":"htyhjtyj","description":"ytjyjyt","paymentType":"Assinatura","price":576575,"imageURL":"blob:http://localhost:3000/e03c0b47-6900-426c-b9ff-0ecb242ec245","checkoutURL":"https://www.google.com","action":"Editar"}]}
